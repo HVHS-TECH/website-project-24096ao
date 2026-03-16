@@ -1,6 +1,10 @@
 .container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
+  grid-template-rows: auto auto auto auto auto;
   padding: 10px;
+}
+
+.headder {
+    
 }
