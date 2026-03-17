@@ -1,9 +1,62 @@
 /********Body*********/
 .body {
-    background-color: 003738;
+    background-color: #003738;
 }
 
 /********Body end*********/
+
+
+/********Nav Bar*********/
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  text-align: right;
+  padding: 20px 20x;
+}
+
+.LoreButton {
+  display: block;
+  text-align: right;
+  padding: 20px 20x;
+}
+
+.Lore-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.LoreButton:hover .Lore-content {
+  display: block;
+}
+
+.MapButton {
+  display: block;
+  text-align: right;
+  padding: 20px 20x;
+}
+
+.CharecterButton {
+  display: block;
+  text-align: right;
+  padding: 20px 20x;
+}
+
+
+/********Nav Bar end*********/
 
 
 /********Main*********/
@@ -18,60 +71,70 @@
     border: 3px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
+    padding: 10px;
 }
 
 .Carosell {
     border: 3px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
+    padding: 10px;
 }
 
 .SmolMap {
     border: 3px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 10px;
 }
 
 .SmolMapInfo {
     border: 3px solid black;
     grid-column-start: 3;
     grid-column-end: 4;
+    padding: 10px;
 }
 
 .BeeImage {
     border: 3px solid black;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding: 10px;
 }
 
 .VictorImage {
     border: 3px solid black;
     grid-column-start: 2;
     grid-column-end: 3;
+    padding: 10px;
 }
 
 .WillImage {
     border: 3px solid black;
     grid-column-start: 3;
     grid-column-end: 4;
+    padding: 10px;
 }
 
 .BeeInfo {
     border: 3px solid black;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding: 10px;
 }
 
 .VictorInfo {
     border: 3px solid black;
     grid-column-start: 2;
     grid-column-end: 3;
+    padding: 10px;
 }
 
 .Willnfo {
     border: 3px solid black;
     grid-column-start: 3;
     grid-column-end: 4;
+    padding: 10px;
 }
 
 
