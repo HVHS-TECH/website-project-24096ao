@@ -1,0 +1,199 @@
+/********Body*********/
+body {
+    background-color: #003738;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+/********Body end*********/
+
+
+/********Nav Bar*********/
+nav {
+  background-color: #546C73;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    Border: 4px solid #546C73;
+}
+
+ul li {
+  Border: 4px solid #546C73;
+  float: right;
+  background-color: #00A49C;
+}
+
+ul li a {
+  color: black;
+  Border: 4px solid #546C73;
+  display: block;
+  text-align: left;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #C1A09E;
+}
+
+ul li:hover {
+    background-color: #C1A09E;
+}
+
+.LoreButton {
+  display: block;
+  text-align: left;
+  padding: 20px 20px;
+}
+
+.Lore-content {
+  display: none;
+  position: absolute;
+  background-color: #00A49C;
+  min-width: 130px;
+  left: 90%;
+  right: 10%;
+}
+
+.LoreButton:hover .Lore-content {
+  display: block;
+}
+
+.MapButton {
+  display: block;
+  text-align: right;
+  padding: 20px 20px;
+}
+
+.Map-content {
+  display: none;
+  position: absolute;
+  background-color: #00A49C;
+  min-width: 130px;
+}
+
+.MapButton:hover .Map-content {
+  display: block;
+}
+
+.CharecterButton {
+  display: block;
+  text-align: right;
+  padding: 20px 20px;
+}
+
+.Charecter-content {
+  display: none;
+  position: absolute;
+  background-color: #00A49C;
+  min-width: 130px;
+}
+
+.CharecterButton:hover .Charecter-content {
+  display: block;
+}
+
+/********Nav Bar end*********/
+
+
+/********Main*********/
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  padding: 10px 10px;
+}
+
+.headder {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px 10px;
+    margin: 20px;
+}
+
+.Carosell {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    margin: 20px;
+}
+
+.SmolMap {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    margin: 20px;
+}
+
+.SmolMapInfo {
+    border: 3px solid #546C73;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 10px;
+    margin: 20px;
+}
+
+.BeeImage {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+    margin: 20px;
+}
+
+.VictorImage {
+    border: 3px solid #546C73;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    margin: 20px;
+}
+
+.WillImage {
+    border: 3px solid #546C73;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 10px;
+    margin: 20px;
+}
+
+.BeeInfo {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+    margin: 20px;
+}
+
+.VictorInfo {
+    border: 3px solid #546C73;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    margin: 20px;
+}
+
+.WillInfo {
+    border: 3px solid #546C73;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/********Main End*********/

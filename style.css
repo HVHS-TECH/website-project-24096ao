@@ -5,6 +5,11 @@ body {
 
 h1 {
   text-align: center;
+  color: white;
+}
+
+p{
+  color: white;
 }
 
 /********Body end*********/
@@ -20,16 +25,18 @@ ul{
     padding: 0;
     overflow: hidden;
     list-style-type: none;
-    Border: 4px solid black;
+    Border: 4px solid #546C73;
 }
 
 ul li {
-  Border: 4px solid black;
+  Border: 4px solid #546C73;
   float: right;
+  background-color: #00A49C;
 }
 
 ul li a {
-  Border: 4px solid black;
+  color: black;
+  Border: 4px solid #546C73;
   display: block;
   text-align: left;
   padding: 20px 20px;
@@ -45,10 +52,8 @@ ul li a {
 .Lore-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #00A49C;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
   left: 90%;
   right: 10%;
 }
@@ -66,10 +71,8 @@ ul li a {
 .Map-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #00A49C;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
 }
 
 .MapButton:hover .Map-content {
@@ -85,10 +88,8 @@ ul li a {
 .Charecter-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #00A49C;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
 }
 
 .CharecterButton:hover .Charecter-content {
@@ -107,7 +108,7 @@ ul li a {
 }
 
 .headder {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 10px 10px;
@@ -115,7 +116,7 @@ ul li a {
 }
 
 .Carosell {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 10px;
@@ -123,7 +124,7 @@ ul li a {
 }
 
 .SmolMap {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 10px;
@@ -131,7 +132,7 @@ ul li a {
 }
 
 .SmolMapInfo {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 3;
     grid-column-end: 4;
     padding: 10px;
@@ -139,7 +140,7 @@ ul li a {
 }
 
 .BeeImage {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 10px;
@@ -147,7 +148,7 @@ ul li a {
 }
 
 .VictorImage {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px;
@@ -155,7 +156,7 @@ ul li a {
 }
 
 .WillImage {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 3;
     grid-column-end: 4;
     padding: 10px;
@@ -163,7 +164,7 @@ ul li a {
 }
 
 .BeeInfo {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 10px;
@@ -171,7 +172,7 @@ ul li a {
 }
 
 .VictorInfo {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 10px;
@@ -179,7 +180,7 @@ ul li a {
 }
 
 .WillInfo {
-    border: 3px solid black;
+    border: 3px solid #546C73;
     grid-column-start: 3;
     grid-column-end: 4;
     padding: 10px;
