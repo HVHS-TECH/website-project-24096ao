@@ -43,6 +43,14 @@ ul li a {
   text-decoration: none;
 }
 
+ul li a:hover {
+    background-color: #C1A09E;
+}
+
+ul li:hover {
+    background-color: #C1A09E;
+}
+
 .LoreButton {
   display: block;
   text-align: left;
@@ -102,44 +110,20 @@ ul li a {
 /********Main*********/
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
   padding: 10px 10px;
 }
 
 .headder {
     border: 3px solid #546C73;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 2;
     padding: 10px 10px;
     margin: 20px;
 }
 
-.Carosell {
-    border: 3px solid #546C73;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding: 10px;
-    margin: 20px;
-}
-
-.SmolMap {
-    border: 3px solid #546C73;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 10px;
-    margin: 20px;
-}
-
-.SmolMapInfo {
-    border: 3px solid #546C73;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding: 10px;
-    margin: 20px;
-}
-
-.BeeImage {
+.MapImage {
     border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -147,42 +131,10 @@ ul li a {
     margin: 20px;
 }
 
-.VictorImage {
-    border: 3px solid #546C73;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 10px;
-    margin: 20px;
-}
-
-.WillImage {
-    border: 3px solid #546C73;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding: 10px;
-    margin: 20px;
-}
-
-.BeeInfo {
+.MapExplanation {
     border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 10px;
-    margin: 20px;
-}
-
-.VictorInfo {
-    border: 3px solid #546C73;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 10px;
-    margin: 20px;
-}
-
-.WillInfo {
-    border: 3px solid #546C73;
-    grid-column-start: 3;
-    grid-column-end: 4;
     padding: 10px;
     margin: 20px;
 }
