@@ -8,6 +8,14 @@ h1 {
   color: white;
 }
 
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
 p{
   color: white;
 }
@@ -21,11 +29,9 @@ nav {
 }
 
 ul{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    Border: 4px solid #546C73;
+  overflow: hidden;
+  list-style-type: none;
+  Border: 4px solid #546C73;
 }
 
 ul li {
@@ -143,7 +149,6 @@ ul li:hover {
     border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 10px;
     margin: 20px;
 }
 
