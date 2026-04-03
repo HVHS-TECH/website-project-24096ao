@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>AHHHHHHH</title>
-<link  href="StyleSheets/carosell.css" rel="stylesheet">
+<link  href="carosell.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,17 +12,20 @@
 <div class="slideshow-container">
 
 <div class="mySlides">
-  <img src="Images/renderedBee.jpg" alt="bee">
-  <div class="text">Caption Text</div>
+  <div class="numbertext">1 / 3</div>
+  <img src="Beatrix.png" alt="Beatrix">
+  <div class="text">Beatrix</div>
 </div>
 
 <div class="mySlides">
-  <img src="Images/renderedVictor.png" alt="Victor">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides">
-  <img src="Images/EveRef.png" alt="bee again">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg">
   <div class="text">Caption Three</div>
 </div>
 
@@ -32,17 +35,14 @@
 </div>
 <br>
 
-<div class="dotCon">
+<div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
-</body>
-</html>
-
 <script>
-  let slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -69,3 +69,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+
+</body>
+</html>
