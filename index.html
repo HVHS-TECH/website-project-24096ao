@@ -6,6 +6,7 @@
     <link rel="icon" type="Images/jpg" href="Images/Icon.jpg">
     <title>home page</title>
     <link href="StyleSheets/style.css" rel="stylesheet">
+    <link href="StyleSheets/carosell.css" rel="CarosellStyle">
 </head>
 
 <body>
@@ -49,8 +50,52 @@
         <h1> Home </h1>
     </div>
 
-    <div class="Carosell">
-        <p>Carosell</p>
+    <div class="carosell">
+        
+        <!--Images inside the carosell-->
+        <!--Bee-->
+        <div class="Inside">
+            <img src="Images/renderedBeatrix.png" alt="Beatrix">
+        </div>
+
+        <!--Victor-->
+        <div class="Inside">
+            <img src="Images/renderedVictor.png" alt="Victor">
+        </div>
+
+        <!--Tobias-->
+        <div class="Inside">
+            <img src="Images/renderedTobias.png" alt="Tobias">
+        </div>
+        
+        <!--Matt-->
+        <div class="Inside">
+            <img src="Images/renderedMatt.png" alt="Matt">
+        </div>
+
+        <div class="Inside">
+            <img src="img_snow_wide.jpg" alt="text">
+        </div>
+
+        <div class="Inside">
+            <img src="img_mountains_wide.jpg" alt="text">
+        </div>
+
+        <!--Buttons for prev and next-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <br>
+
+        <!--Idicators-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
     </div>
     
     <div class="SmolMap">
@@ -90,5 +135,50 @@
 </main>
 
 </body>
+
+<!--java script for carosell-->
+    <script>
+        //amount of slides
+        let slideIndex = 1;
+        //shows what slide you are on
+        showSlides(slideIndex);
+
+        //chages slides whenever prev or next is clicked
+        function plusSlides(n) {
+           showSlides(slideIndex += n);
+        }
+
+       //current slide based on what user clicked
+        function currentSlide(n) {
+           showSlides(slideIndex = n);
+        }
+
+        //Show slides
+        function showSlides(n) {
+        let i;
+            
+        //gets the information from each div
+        let slides = document.getElementsByClassName("Inside");
+        let dots = document.getElementsByClassName("dot");
+            
+        //what slide dislayes in relation to what the user clicked
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+            
+        //hides all other slides
+        for (i = 0; i < slides.length; i++) {                
+            slides[i].style.display = "none";  
+        }
+            
+        //Makes the dot be active when its on its correct slide
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+            
+        //dislay slides and dots
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 
 </html>

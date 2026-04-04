@@ -1,4 +1,4 @@
-/********Body*********/
+/******************Body**********************/
 body {
     background-color: #003738;
 }
@@ -12,12 +12,14 @@ p{
   color: white;
 }
 
-/********Body end*********/
+/****************Body end***********************/
 
 
-/********Nav Bar*********/
+/****************************Nav Bar**********************/
 nav {
   background-color: #546C73;
+  position: relative;
+  z-index: 40;
 }
 
 ul{
@@ -104,10 +106,10 @@ ul li:hover {
   display: block;
 }
 
-/********Nav Bar end*********/
+/******************Nav Bar end*******************************/
 
 
-/********Main*********/
+/*****************************Main*******************************/
 .container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -120,14 +122,6 @@ ul li:hover {
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 10px 10px;
-    margin: 20px;
-}
-
-.Carosell {
-    border: 3px solid #546C73;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding: 10px;
     margin: 20px;
 }
 
@@ -196,4 +190,87 @@ ul li:hover {
 }
 
 
-/********Main End*********/
+/*****************************Main End*******************************/
+
+/**************************Carosell*********************/
+.carosell {
+  border: 3px solid #546C73;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 10px;
+  margin: 20px;
+  position: relative;
+}
+
+.carosell .Inside {
+  display: none; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  background-color: #00A49C;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* next button */
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* prev button */
+.prev {
+  left: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #C1A09E;
+}
+
+/* information on each slide */
+.caption {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  left:20%;
+}
+
+/* idicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00A49C;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #C1A09E;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/******Carosell end***********/

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>AHHHHHHH</title>
+<link  href="StyleSheets/carosell.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="carosell">
+
+  <div class="Inside">
+    <img src="Images/Beatrix.png" alt="Beatrix">
+    <div class="caption">Beatrix</div>
+  </div>
+
+  <div class="Inside">
+    <img src="img_snow_wide.jpg" alt="text">
+    <div class="caption">Caption Two</div>
+  </div>
+
+  <div class="Inside">
+    <img src="img_mountains_wide.jpg" alt="text">
+    <div class="caption">Caption Three</div>
+  </div>
+
+  <div class="Inside">
+    <img src="Beatrix.png" alt="Beatrix">
+    <div class="caption">Caption four</div>
+  </div>
+
+  <div class="Inside">
+    <img src="img_snow_wide.jpg" alt="text">
+    <div class="caption">Caption five</div>
+  </div>
+
+  <div class="Inside">
+    <img src="img_mountains_wide.jpg" alt="text">
+    <div class="caption">Caption six</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+
+
+<!--java script-->
+<script>
+//amount of slides
+let slideIndex = 1;
+//shows what slide you are on
+showSlides(slideIndex);
+
+//chages slides whenever prev or next is clicked
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+//current slide based on what user clicked
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+//Show slides
+function showSlides(n) {
+  let i;
+  //gets the information from each div
+  let slides = document.getElementsByClassName("Inside");
+  let dots = document.getElementsByClassName("dot");
+  //what slide dislayes in relation to what the user clicked
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  //hides all other slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  //Makes the dot be active when its on its correct slide
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  //dislay
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html>
