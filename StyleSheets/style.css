@@ -194,7 +194,6 @@ ul li:hover {
 
 /**************************Carosell*********************/
 .carosell {
-  border: 3px solid #546C73;
   grid-column-start: 1;
   grid-column-end: 4;
   padding: 10px;
@@ -202,17 +201,23 @@ ul li:hover {
   position: relative;
 }
 
+
 .carosell .Inside {
   display: none; 
+}
+
+.carosell img {
+  position: relative;
+  border: 3px solid #546C73;
+  left:20%
 }
 
 /* Next & previous buttons */
 .prev, .next {
   position: absolute;
-  cursor: pointer;
   top: 50%;
+  cursor: pointer;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: #000000;
   background-color: #00A49C;
@@ -224,14 +229,16 @@ ul li:hover {
 
 /* next button */
 .next {
-  right: 10%;
+  border: 3px solid #546C73;
   border-radius: 3px 0 0 3px;
+  right: 10%;
 }
 
 /* prev button */
 .prev {
-  left: 10%;
+  border: 3px solid #546C73;
   border-radius: 3px 0 0 3px;
+  left: 10%;
 }
 
 .prev:hover, .next:hover {
@@ -239,12 +246,13 @@ ul li:hover {
 }
 
 /* information on each slide */
-.caption {
-  color: #000000;
-  font-size: 15px;
+.info {
+  color: #ffffff;
+  font-weight: bold; 
   padding: 8px 12px;
   position: absolute;
-  left:20%;
+  left:22%;
+  top: 5%;
 }
 
 /* idicators */

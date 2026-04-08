@@ -52,39 +52,47 @@
 
     <div class="carosell">
         
+        <!--Button for next-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+
         <!--Images inside the carosell-->
         <!--Bee-->
         <div class="Inside">
             <img src="Images/renderedBeatrix.png" alt="Beatrix">
+            <h3 class="info">Beatrix</h3>
         </div>
 
         <!--Victor-->
         <div class="Inside">
             <img src="Images/renderedVictor.png" alt="Victor">
+            <h3 class="info">Victor</h3>
         </div>
 
         <!--Tobias-->
         <div class="Inside">
             <img src="Images/renderedTobias.png" alt="Tobias">
+            <h3 class="info">Tobias</h3>
         </div>
         
         <!--Matt-->
         <div class="Inside">
             <img src="Images/renderedMatt.png" alt="Matt">
+            <h3 class="info">Matt</h3>
         </div>
 
         <!--Will-->
         <div class="Inside">
             <img src="Images/renderedWill.png" alt="Will">
+            <h3 class="info">Will</h3>
         </div>
 
         <!--Eve-->
         <div class="Inside">
             <img src="img_mountains_wide.jpg" alt="Eve">
+            <h3 class="info">Eve</h3>
         </div>
 
-        <!--Buttons for prev and next-->
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <!--Button for next-->
         <a class="next" onclick="plusSlides(1)">❯</a>
 
         <br>
@@ -178,7 +186,7 @@
         }
             
         //dislay slides and dots
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex-1].style.display = " block";  
         dots[slideIndex-1].className += " active";
         }
     </script>
