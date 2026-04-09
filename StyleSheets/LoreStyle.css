@@ -2,14 +2,12 @@
 body {
     background-color: #003738;
 }
+main {
+   color: white;
+}
 
 h1 {
   text-align: center;
-  color: white;
-}
-
-p{
-  color: white;
 }
 
 /********Body end*********/

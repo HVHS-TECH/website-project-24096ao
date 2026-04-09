@@ -3,21 +3,12 @@ body {
     background-color: #003738;
 }
 
+main {
+  color: white;
+}
+
 h1 {
   text-align: center;
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-p{
-  color: white;
 }
 
 img {
@@ -152,6 +143,11 @@ ul li:hover {
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 20px;
+}
+
+.Rendered img {
+  width: 100%;
+  height: auto;
 }
 
 .hobbies {
