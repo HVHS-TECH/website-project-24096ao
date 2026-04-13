@@ -3,12 +3,7 @@ body {
     background-color: #003738;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-}
-
-p{
+main {
   color: white;
 }
 
@@ -117,12 +112,18 @@ ul li:hover {
   padding: 10px 10px;
 }
 
+.container img {
+  width: 100%;
+  height: auto;
+}
+
 .headder {
     border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 10px 10px;
     margin: 20px;
+    text-align: center;
 }
 
 .SmolMap {
@@ -209,7 +210,9 @@ ul li:hover {
 .carosell img {
   position: relative;
   border: 3px solid #546C73;
-  left:20%
+  left:20%;
+  width: 60%;
+  height: auto;
 }
 
 /* Next & previous buttons */
@@ -282,3 +285,12 @@ ul li:hover {
 }
 
 /******Carosell end***********/
+
+/******footer***********/
+footer {
+  background-color: #546C73;
+  Border: 4px solid #546C73;
+  padding: 10px;
+  margin: 10px;
+}
+/******footer end***********/
