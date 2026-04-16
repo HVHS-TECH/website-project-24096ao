@@ -22,6 +22,13 @@ nav {
   background-color: #546C73;
 }
 
+nav img {
+    float: left;
+    height: 60px;
+    width: auto;
+    padding: 10px 20px;
+}
+
 ul{
   overflow: hidden;
   list-style-type: none;
@@ -111,7 +118,7 @@ ul li:hover {
 .container {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   padding: 10px 10px;
 }
 
@@ -153,14 +160,6 @@ ul li:hover {
 .hobbies {
     border: 3px solid #546C73;
     grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 10px;
-    margin: 20px;
-}
-
-.personality {
-    border: 3px solid #546C73;
-    grid-column-start: 1;
     grid-column-end: 3;
     padding: 10px;
     margin: 20px;

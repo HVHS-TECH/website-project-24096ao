@@ -17,6 +17,13 @@ nav {
   z-index: 40;
 }
 
+nav img {
+    float: left;
+    height: 60px;
+    width: auto;
+    padding: 10px 20px;
+}
+
 ul{
     margin: 0;
     padding: 0;
