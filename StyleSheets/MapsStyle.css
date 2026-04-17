@@ -18,6 +18,8 @@ main {
 /********Nav Bar*********/
 nav {
   background-color: #546C73;
+  position: relative;
+  z-index: 40;
 }
 
 nav img {
@@ -117,7 +119,7 @@ ul li:hover {
 /********Main*********/
 .container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 70% 30%;
   grid-template-rows: auto auto auto;
   padding: 10px 10px;
 }
@@ -125,7 +127,7 @@ ul li:hover {
 .headder {
     border: 3px solid #546C73;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     padding: 10px 10px;
     margin: 20px;
 }
@@ -133,15 +135,28 @@ ul li:hover {
 .MapImage {
     border: 3px solid #546C73;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     padding: 10px;
     margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .MapExplanation {
     border: 3px solid #546C73;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding: 10px;
+    margin: 20px;
+}
+
+.StateNames {
+    border: 3px solid #546C73;
+    grid-column-start: 2;
+    grid-column-end: 3;
     padding: 10px;
     margin: 20px;
 }

@@ -20,6 +20,8 @@ h1, h2, h3 {
 /********Nav Bar*********/
 nav {
   background-color: #546C73;
+  position: relative;
+  z-index: 40;
 }
 
 nav img {

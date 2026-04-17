@@ -20,6 +20,8 @@ img {
 /********Nav Bar*********/
 nav {
   background-color: #546C73;
+  position: relative;
+  z-index: 40;
 }
 
 nav img {
@@ -30,9 +32,11 @@ nav img {
 }
 
 ul{
-  overflow: hidden;
-  list-style-type: none;
-  Border: 4px solid #546C73;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    Border: 4px solid #546C73;
 }
 
 ul li {
@@ -152,7 +156,7 @@ ul li:hover {
     margin: 20px;
 }
 
-.Rendered img {
+.Rendered img, .Refrence img {
   width: 100%;
   height: auto;
 }
