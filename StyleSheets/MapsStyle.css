@@ -12,6 +12,10 @@ main {
   color: white;
 }
 
+h1, h2, h3, h4 {
+  text-decoration: underline;
+}
+
 /********Body end*********/
 
 
@@ -29,7 +33,7 @@ nav img {
     padding: 10px 20px;
 }
 
-ul{
+nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -37,13 +41,13 @@ ul{
     Border: 4px solid #546C73;
 }
 
-ul li {
+nav ul li {
   Border: 4px solid #546C73;
   float: right;
   background-color: #00A49C;
 }
 
-ul li a {
+nav ul li a {
   color: black;
   Border: 4px solid #546C73;
   display: block;
@@ -52,11 +56,11 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     background-color: #C1A09E;
 }
 
-ul li:hover {
+nav ul li:hover {
     background-color: #C1A09E;
 }
 
