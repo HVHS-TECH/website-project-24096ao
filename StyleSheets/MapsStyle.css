@@ -139,7 +139,7 @@ nav ul li:hover {
 .MapImage {
     border: 3px solid #546C73;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     padding: 10px;
     margin: 20px;
 }
@@ -149,6 +149,16 @@ img {
     height: auto;
 }
 
+.StateNames {
+    border: 3px solid #546C73;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 10px;
+    margin: 20px;
+}
+
 .MapExplanation {
     border: 3px solid #546C73;
     grid-column-start: 1;
@@ -156,15 +166,6 @@ img {
     padding: 10px;
     margin: 20px;
 }
-
-.StateNames {
-    border: 3px solid #546C73;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 10px;
-    margin: 20px;
-}
-
 
 /********Main End*********/
 
