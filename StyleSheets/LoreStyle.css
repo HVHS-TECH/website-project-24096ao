@@ -142,6 +142,11 @@ ul li:hover {
     margin: 20px;
 }
 
+.Image img {
+  width: 100%;
+  height: auto;
+}
+
 .Info {
     border: 3px solid #546C73;
     grid-column-start: 2;

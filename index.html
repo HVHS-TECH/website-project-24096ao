@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="Images/jpg" href="Images/Icon.jpg">
     <title>home page</title>
+    <script type="text/javascript" src="Carosell.js"></script>
     <link href="StyleSheets/style.css" rel="stylesheet">
     <link href="StyleSheets/carosell.css" rel="CarosellStyle">
 </head>
@@ -54,49 +55,49 @@
     </div>
 
     <div class="carosell">
-        
-        <!--Button for next-->
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
 
         <!--Images inside the carosell-->
         <!--Bee-->
         <div class="Inside">
-            <img src="Images/renderedBeatrix.png" alt="Beatrix rendered">
+            <img src="Images/BeeRef.jpg" alt="Beatrix rendered">
             <h2 class="info">Beatrix</h2>
         </div>
 
         <!--Victor-->
         <div class="Inside">
-            <img src="Images/renderedVictor.png" alt="Victor rendered">
+            <img src="Images/VictorRef.jpg" alt="Victor rendered">
             <h2 class="info">Victor</h2>
         </div>
 
         <!--Tobias-->
         <div class="Inside">
-            <img src="Images/renderedTobias.png" alt="Tobias rendered">
+            <img src="Images/TobiasRef.jpg" alt="Tobias rendered">
             <h2 class="info">Tobias</h2>
         </div>
         
         <!--Matt-->
         <div class="Inside">
-            <img src="Images/renderedMatt.png" alt="Matt rendered">
+            <img src="Images/MattRef.jpg" alt="Matt rendered">
             <h2 class="info">Matt</h2>
         </div>
 
         <!--Will-->
         <div class="Inside">
-            <img src="Images/renderedWill.png" alt="Will rendered">
+            <img src="Images/WillRef.jpg" alt="Will rendered">
             <h2 class="info">Will</h2>
         </div>
 
         <!--Eve-->
         <div class="Inside">
-            <img src="Images/eveRendered.jpg" alt="Eve rendered">
+            <img src="Images/EveRef.jpg" alt="Eve rendered">
             <h2 class="info">Eve</h2>
         </div>
 
         <!--Button for next-->
         <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!--Button for previous-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
 
         <br>
 
@@ -130,15 +131,15 @@
     </div>
 
     <div class="BeeImage">
-        <img src="Images/BeaProfile.png" alt="Beatrix">
+        <img src="Images/BeaProfile.jpg" alt="Beatrix">
     </div>
 
     <div class="VictorImage">
-        <img src="Images/VictorProfile.png" alt="Victor">
+        <img src="Images/VictorPofile.jpg" alt="Victor">
     </div>
 
     <div class="WillImage">
-        <img src="Images/WillProfile.png" alt="Will">
+        <img src="Images/WillProfile.jpg" alt="Will">
     </div>
 
     <div class="BeeInfo">
@@ -196,8 +197,6 @@
 </footer>
 
 </body>
-
-<!--java script for carosell-->
     <script>
         //amount of slides
         let slideIndex = 1;
@@ -241,5 +240,4 @@
         dots[slideIndex-1].className += " active";
         }
     </script>
-
 </html>
