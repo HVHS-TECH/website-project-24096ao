@@ -141,6 +141,16 @@ ul li:hover {
     text-align: center;
 }
 
+.Lable, .TheMCs {
+    border: 3px solid #546C73;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
 .SmolMap {
     border: 3px solid #546C73;
     grid-column-start: 1;
@@ -203,6 +213,10 @@ ul li:hover {
     grid-column-end: 4;
     padding: 10px;
     margin: 20px;
+}
+
+.BeeInfo h2, .VictorInfo h2, .WillInfo h2 {
+  text-align: center;
 }
 
 
